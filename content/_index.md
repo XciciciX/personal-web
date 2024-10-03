@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Xixiao Pan'
 date: 2023-10-24
 type: landing
 
@@ -39,7 +39,7 @@ sections:
       username: admin
   - block: awards
     content:
-      title: Awards
+      title: Projects
       username: admin
   - block: languages
     content:
