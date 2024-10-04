@@ -1,7 +1,6 @@
 {
   "htmlElements": {
     "tags": [
-      "?xml",
       "a",
       "article",
       "body",
@@ -26,7 +25,6 @@
       "ol",
       "p",
       "path",
-      "polygon",
       "radialgradient",
       "script",
       "section",
@@ -110,7 +108,6 @@
       "h-3.5",
       "h-5",
       "h-6",
-      "h-7",
       "h-[24px]",
       "hbb-section",
       "home-section-bg",
@@ -180,8 +177,6 @@
       "skills-wrapper",
       "sm:h-64",
       "sm:px-0",
-      "st0",
-      "st1",
       "text-1xl",
       "text-2xl",
       "text-3xl",
@@ -208,13 +203,11 @@
       "w-3.5",
       "w-5",
       "w-6",
-      "w-7",
       "w-[24px]",
       "w-full",
       "z-10"
     ],
     "ids": [
-      "Layer_1",
       "deviconConfluence0",
       "deviconConfluence1",
       "deviconLinux0",

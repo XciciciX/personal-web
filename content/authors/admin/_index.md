@@ -190,48 +190,63 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: 'Scalable Web Search Engine: Similar to Google'
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: 
+    url: 
+    date: '2024-04-01'
+    awarder: January 2024
     icon: 
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+      The project is a robust search website equipped with a comprehensive document database, allowing users to input queries and receive the most relevant results efficiently. This project applied advanced information retrieval techniques, including text analysis using Term Frequency-Inverse Document Frequency (tf-idf) to assess the importance of words within documents, and link analysis with PageRank to measure the authority and relevance of documents based on their link structures.
+      For faster and more scalable performance, parallel data processing using MapReduce is employed. It improves the speed of analyzing large datasets by distributing the workload across multiple nodes. The project can handle high volumes of queries and data while delivering accurate and timely search results.
+      
   - title: 'Lipstick Expert'
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+    url: https://lipstickexpert.netlify.app/
+    date: '2024-04-01'
+    awarder: January 2024
+    icon: 
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+      The Lipstick Expert is a web search engine to guide consumers how to select the most suitable lipstick based on price, benefit, and color in the rapidly expanding cosmetic market. The project crawls data from YouTube and Sephora, and then utilizes natrual language processing and machine learning model to develop an algorithm for product scores. Finally, it returns the top recommended lipstick choices for consumers. 
+      The data collection process crawls the ten most related products from YouTube Lipstick videos, and the product details on Sephora. Data is crawled by BeautifulSoup, Youtube API and Sephora API.
+      Our model determines product scores by considering factors such as mention frequency, popularity metrics, and sentiment analysis from natural language processing. The model is trained and optimized based on Kendall-tau distance using Python.
   - title: 'Full-stack Web Development: Simulate Instagram'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+    url: 
+    date: '2024-03-01'
+    awarder: January 2024
+    icon: 
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+     The project is an online social media platform that simulates Instagram, complete with user profiles and interactive posts enhanced by UI effects. The platform includes core features such as user authentication (login and logout), the ability to create and interact with posts, comment on them, like posts, and follow other users.
+     For the backend, I employed SQL to manage the database, efficiently storing and retrieving user data, posts, and relationships between users. To enable seamless communication between the client and server, REST API in Python was used. On the frontend, I utilized React to build responsive and dynamic user interfaces, while the server-side logic and routing were handled using Flask. This combination of Flask and React created a cohesive, interactive platform where the client-side experience smoothly integrated with server-side functionality.
   - title: 'Database Management: Online Banking System Simulator'
+    url: 
+    date: '2023-10-01'
+    awarder: November 2023
+    summary: |
+     This project develops a real-time online banking system simulator using C++, featuring a comprehensive database for managing transactions and user accounts. The system provides functionality for querying transaction history and performing revenue analysis. It designs algorithms for fraud detection, transaction scheduling, and fee calculation, while implementing data structures such as priority queues and hash tables to ensure efficient transaction processing and secure operations.
   - title: 'Machine Learning Application: Predicting Depression Condition'
-  - title: 'TimeSafari: Dinosaur World'
-    date:
+    url: https://drive.google.com/file/d/1vWFGVaCjnExiOHQB4iJ9GQKmKlXU-pFx/view?usp=drive_link
+    date: '2023-10-01'
+    awarder: December 2024
     summary: |
-      - Quest 3 VR headset, Unreal Engine 5, JIRA
-      Animation, Inventory System
-      A VR game made in Unreal Engine 5 to educate dinosaur information. 
+     This project explores the prediction of depression severity by integrating biochemical and socioeconomic indicators using data from the NHANES 2017-2020 dataset. It addresses the role of biochemical markers, such as cholesterol and protein levels, in predicting depression and employs oversampling techniques to balance the dataset. Using LASSO regression and Random Forest modeling, the study identifies key biochemical variables related to depression, achieving an RMSE of 4.31.
+     Additionally, the project investigates the impact of socioeconomic factors on depression through logistic regression and K-Nearest Neighbors (KNN) models. The analysis reveals that higher education levels and lower poverty rates correlate with reduced likelihood of depression, with the KNN model achieving approximately 70% accuracy in identifying depressed individuals. These findings highlight the importance of combining biochemical and socioeconomic predictors to improve understanding and diagnosis of depression.
+ 
+  - title: 'DinoSnap: Dinosaur World'
+    url: https://eecs498-group6.netlify.app/
+    date: '2024-05-01'
+    awarder: April 2024
+    summary: |
+      DinoSnap is an educational VR game that is meant to teach players about dinosaurs and different dinosaur eras through a unique and interactive atmosphere. Our goal is to have the player learn more about the history of dinosaurs whilst having a fun and immersive experience.
   - title: 'AnnArbor Go'
-    date:
+    url: https://xcicicix.github.io/p2_498.html
+    date: '2024-03-01'
+    awarder: February 2024
     summary: |
-      - AR on IOS Mobile, Unity, JIRA, C#
-      An AR phone application inspired by the game Pokemon Go with settings of Ann Arbor.
+     It is an AR mobile application designed by Unity in a team of two. It simulates the game Pokemon Go with the settings in Ann Arbor. In this game, you have one exploration mode with Mapbox in Unity and one interaction mode with AR to grow trees in Ann Arbor. You can earn leaves as currency by growing trees and unlock products in the shop. Squirrals will appear randomly near the tree and harm your trees. You need to use acorns to fight them. We used Github for version control and JIRA for manamgement.
   - title: 'SummerSara'
-    date:
+    url: https://focs.ji.sjtu.edu.cn/silverfocs/demo/2022/p2team15/
+    date: '2022-04-01'
+    awarder: July 2022
     summary: |
-      - Elm, Web Development, CSS
-      A puzzle game made by Elm language.
+      It is a web game mainly written by Elm language. It is a puzzle game simulated by game Rust Lake. You are trapped in a 7-day loop. You need to find the way out by interacting with different NPCs and locations. A lot of small games are hidden in different locations. You can explore a lot of things. In this game, the logic is realized by a functional programming language Elm and the front-end is realized by CSS. We used Github for version control and team manamgement.
 ---
 
 Hi! I am a senior student in University of Michigan majoring in Data Science Engineering. And I have a dual degree in Shanghai Jiao Tong University in Electrical and Computer Engineering. 
