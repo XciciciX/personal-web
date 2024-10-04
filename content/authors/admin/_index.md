@@ -204,7 +204,7 @@ awards:
       The data collection process crawls the ten most related products from YouTube Lipstick videos, and the product details on Sephora. Data is crawled by BeautifulSoup, Youtube API and Sephora API.
       Our model determines product scores by considering factors such as mention frequency, popularity metrics, and sentiment analysis from natural language processing. The model is trained and optimized based on Kendall-tau distance using Python.
   - title: 'Full-stack Web Development: Simulate Instagram'
-    url: 
+    url: http://ec2-54-152-252-86.compute-1.amazonaws.com/accounts/login/
     date: '2024-03-01'
     awarder: January 2024
     icon: 
@@ -212,7 +212,7 @@ awards:
      The project is an online social media platform that simulates Instagram, complete with user profiles and interactive posts enhanced by UI effects. The platform includes core features such as user authentication (login and logout), the ability to create and interact with posts, comment on them, like posts, and follow other users.
      For the backend, I employed SQL to manage the database, efficiently storing and retrieving user data, posts, and relationships between users. To enable seamless communication between the client and server, REST API in Python was used. On the frontend, I utilized React to build responsive and dynamic user interfaces, while the server-side logic and routing were handled using Flask. This combination of Flask and React created a cohesive, interactive platform where the client-side experience smoothly integrated with server-side functionality.
   - title: 'Database Management: Online Banking System Simulator'
-    url: 
+    url: https://github.com/XciciciX/BankManagementSystem.git
     date: '2023-10-01'
     awarder: November 2023
     summary: |
