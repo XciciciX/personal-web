@@ -136,7 +136,7 @@ work:
       - Exported the data of 10 km long I-94 highway in Detroit to RoadRunner to create the virtual road with realistic road pattern.
       - Made an immersive environment and optimized rendering speed by 4x using macro variation and level-of-detail (LOD) techniques for foliage, road signs, and environmental assets, reducing frame drops and ensuring a high update rate.
 
-  - position: Backend Development Inter
+  - position: Backend Development Intern
     company_name: Ping An Technology Co., Ltd.
     company_url: 
     company_logo: ''
@@ -144,9 +144,8 @@ work:
     date_end: 2023-08-01
     summary: |
       Responsibilities include:
-      - Read papers related to SimCLR model and MoCo model for unsupervised multimedia data quality assessment technology.
-      - Learned scripts of SimCLR from Github and reproduced code with PyTorch.
-      - Implemented the deep residual network (ResNet-50) and Very Deep Convolutional Networks (VGG).
+      - Led iBatis-to-MyBatis migration by developing an industry-standard Java-based transformation utility with regex pattern matching that reduced manual migration effort by 90%.
+      - Implemented RocketMQ-based messaging system with support for retry logic and Dead Letter Queues (DLQ) to ensure message reliability and failure recovery in core loan repayment processing workflows.
 
   - position: Research Student - Advised by Professor Qinya Li
     company_name: Shanghai Jiao Tong University
@@ -252,15 +251,41 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+
 awards:
-  - title: 'Scalable Web Search Engine: Similar to Google'
-    url: 
-    date: '2024-04-01'
-    awarder: January 2024
+
+  - title: 'Scalable Search Engine'
+    url: https://github.com/XciciciX/SearchEngine
+    date: '2025-01-10'
+    awarder: May 2025
     icon: 
     summary: |
-      The project is a robust search website equipped with a comprehensive document database, allowing users to input queries and receive the most relevant results efficiently. This project applied advanced information retrieval techniques, including text analysis using Term Frequency-Inverse Document Frequency (tf-idf) to assess the importance of words within documents, and link analysis with PageRank to measure the authority and relevance of documents based on their link structures.
-      For faster and more scalable performance, parallel data processing using MapReduce is employed. It improves the speed of analyzing large datasets by distributing the workload across multiple nodes. The project can handle high volumes of queries and data while delivering accurate and timely search results.
+      The project is a fully distributed web-scale search engine, designed and implemented from the ground up with components for crawling, parsing, indexing, and ranking. It employs a multi-threaded and multi-process architecture, where each node independently maintains its own crawler, parser, frontier, and index while coordinating through a SHA-256–based URL hashing system for distributed load balancing. To prevent duplicate crawling, each node maintains Bloom filters for inter-node communication and forwards out-of-domain URLs to the correct server over TCP/IP.
+
+      The indexing subsystem supports runtime index construction and duplicate detection through shingling, stemming, and token normalization, storing compressed posting lists in chunked index files for efficient access. Queries are compiled into Boolean and phrase constraints via a Constraint Solver and Query Compiler, which builds layered ISR structures (ISRAnd, ISROr, ISRPhrase) to support complex query logic. A two-stage ranking pipeline combines a heuristic ranker—leveraging structural and frequency-based features—with a neural ML ranker trained in Python and deployed via ONNX for fine-grained relevance scoring.
+
+      This distributed design enables parallel query processing and runtime indexing across multiple nodes, providing resilience to individual node failures. The final system achieved strong retrieval performance with an NDCG score of 0.7827, demonstrating the engine’s ability to produce rankings comparable to commercial search engines while remaining fully self-contained and horizontally scalable.
+
+  - title: 'Distributed Key-Value Storage'
+    url: https://github.com/XciciciX/Distributed_KV_System
+    date: '2024-10-01'
+    awarder: December 2024
+    icon: 
+    summary: |
+      The project is a fault-tolerant sharded key/value storage system built on top of the Paxos consensus protocol to ensure strong consistency across distributed servers. The system partitions data into shards and assigns each shard to a replica group, where Paxos maintains agreement on the sequence of operations within the group. A centralized Shard Master, also replicated using Paxos, manages dynamic reconfiguration by balancing shard assignments when replica groups join or leave the system.
+
+      To guarantee linearizable consistency during reconfiguration, the system synchronizes data transfers between groups through shard migration protocols that use coordinated RPCs (AssignShard and PullShard). Each client request carries configuration metadata to prevent stale operations during configuration changes. The design achieves single-copy semantics under concurrent updates and network partitions, ensuring availability and correctness even when a minority of servers fail.
+
+
+  - title: 'miProxy – HTTP Video Proxy'
+    url: https://github.com/XciciciX/miProxy
+    date: '2024-08-20'
+    awarder: December 2024
+    icon: 
+    summary: |
+      The project is an adaptive HTTP proxy designed for MPEG-DASH video streaming, capable of dynamically selecting video bitrates based on real-time network throughput. It integrates a custom DNS-based load balancer to distribute client requests among multiple CDN servers, optimizing both latency and load distribution. Advanced adaptive streaming techniques are applied to monitor connection bandwidth and automatically adjust segment bitrates to maintain stable playback quality.
+
+      For performance evaluation, a multi-node CDN environment was simulated using Mininet, where the proxy achieved consistent load balancing (<5% variance) and sustained up to 30% higher average bitrate utilization under fluctuating bandwidth conditions. The system supports concurrent client connections and ensures smooth playback by combining intelligent bitrate adaptation with efficient TCP data forwarding and throughput estimation.
       
   - title: 'Lipstick Expert'
     url: https://lipstickexpert.netlify.app/
