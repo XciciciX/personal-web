@@ -16,19 +16,19 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Undergraduate Student
+role: Graduate Student in Computer Science
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Michigan
-    url: https://umich.edu/
-  - name: xixiaoxx@umich.edu
+  - name: University of Southern California
+    url: https://viterbischool.usc.edu/
+  - name: cicipan@live.com
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'xixiaoxx@umich.edu'
+    url: 'cicipan@live.com'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/XciciciX
@@ -36,6 +36,18 @@ profiles:
     url: https://www.linkedin.com/in/xixiao-pan/
 
 education:
+  - area: M.S. Computer Science
+    institution: University of Southern California, Viterbi School of Engineering
+    date_start: 2025-08-25
+    date_end: 2027-05-02
+    summary: |
+      GPA: 4.0/4.0
+
+      Courses included:
+      - Multimedia System Design
+      - LLM
+      - Operating System
+      - Advanced Analysis of Algorithms
   - area: B.S.E. Data Science Engineering
     institution: University of Michigan, College of Engineering
     date_start: 2023-09-01
@@ -44,8 +56,9 @@ education:
       GPA: 3.8/4.0
 
       Courses included:
-      - Artificial Intelligence: Data Mining, Machine Learning, Computer Vision, Natural Language Processing, Computer Graphics and GenAI
-      - Software Development: Computer Networks, Web Development, Database Management, VR/AR Development
+      - Data Analysis: Data Mining, Machine Learning
+      - Artificial Intelligence: Computer Vision, Natural Language Processing, Computer Graphics and GenAI
+      - Software Development: Distributed Systems, Search Enginer, Computer Networks, Web Development, Database Management, VR/AR Development
       - Computer Architecture: Computer Organization
   - area: B.E. Electrical and Computer Engineering
     institution: Shanghai Jiao Tong University, UM-SJTU Joint Institute
@@ -55,6 +68,7 @@ education:
       GPA: 3.7/4.0
 
       Courses included:
+      - Artificial Intelligence: Deep Learning
       - Math: Linear Algebra, Calculus, Discrete Mathematics
       - Circuits: Signal Processing, Logical Design
 
@@ -64,25 +78,75 @@ work:
     company_url: 'https://www.amd.com/en.html'
     company_logo: custom/amd-logo.png
     date_start: 2024-05-15
-    date_end: 2024-12-01
-    summary: |2-
+    date_end: 2025-04-01
+    summary: |
       Responsibilities include:
-      - Deployed five deep learning models including diffusions and LLMs on Windows platform. Embedded models into a software in development.
-      - Exported PyTorch models as ONNX models to generally apply on all platforms.
-      - Optimize LLM models through AWQ quantization.
-      - Improved Stable Diffusion 3x faster by transformer optimization and quantization.
+      - Designed and implemented Wingman AI Debug Agent, utilizing React and Django, featuring real-time monitoring dashboards and intelligent controllers that interpret natural language commands to automate driver development workflows, resulting in 70% increased development efficiency.
+      - Integrated AMD’s proprietary LLM API to decompose complex tasks into structured subtasks using a custom-built interpreter framework.
+      - Boosted task execution accuracy by 30% through prompt engineering, few-shot learning, and role-based message design, while reducing latency by up to 40% via response caching and prompt deduplication.
+      - Optimized model architecture and attention mechanisms for Stable Diffusion XL Turbo and Stable Diffusion 3 by applying multi-head attention transformations, ONNX graph rewrites, and transformer structure improvements—resulting in up to 3× inference speedups on AMD GPUs.
+      - Reduced memory footprint and boosted throughput through quantization techniques including FP16 and INT4 AWQ, and by converting PyTorch models to ONNX format using Microsoft Olive for cross-platform, high-performance inference deployment.
+
+  - position: Student Researcher/Machine Learning Engineer Intern
+    company_name: Grundfos
+    company_url: 'https://www.grundfos.com/us'
+    company_logo: custom/amd-logo.png
+    date_start: 2025-06-02
+    date_end: 2025-08-10
+    summary: |
+      Responsibilities include:
+      - Built a testbed with water pumps integrating multiple industrial-grade sensors (pH, EC, DO, and liquid flow) via RS485 communication to monitor water quality parameters with high accuracy.
+      - Collected Ethylene glycol concentration every half day continuously in an abnormal envrionment.
+      - Developed a LSTM+CNN model to predict the remaining useful life of the cooling system, which achieved 96% accuracy in a 14-day period.
+  
+  - position: AI Developer Intern
+    company_name: Artisk.ai
+    company_url: https://www.artisk.ai/
+    company_logo: ''
+    date_start: 2025-03-01
+    date_end: 2025-05-28
+    summary: |
+      Responsibilities include:
+      - Engineered a production-ready AI logo customization platform with an OpenCV-based image processor, deployed as a containerized Flask microservice with Docker on GCP with print-ready logo transformations supporting 10,000+ daily customization requests.
+      - Implemented a Redis-based asynchronous task queue with request polling and real-time updates, enabling smooth client-side interaction via JavaScript while ensuring efficient and non-blocking image processing workflows.
+
+  - position: Student Contributor
+    company_name: Artisk.ai
+    company_url: https://www.artisk.ai/
+    company_logo: ''
+    date_start: 2025-02-01
+    date_end: 2025-03-01
+    summary: |
+      Responsibilities include:
+      - Engineered an AI-powered learning web using Claude 3 LLM via AWS Bedrock, with custom prompt engineering and validation to automatically generate study materials from uploaded files.
+      - Implemented Redis-based caching for template graph data, reducing backend cold-start time to near-instant load by storing precomputed data; managed Redis cluster with custom TTL policies.
+      - Developed scalable RESTful APIs using FastAPI to support full CRUD operations on Neo4j-stored graph data (e.g., Thought nodes, relationships) and file upload; implemented response caching with Redis, and applied request batching and selective data hydration to improve API response times.
+
+
 
   - position: Research Intern - Advised by Professor Paul Green
     company_name: University of Michigan Transportation Research Institute
     company_url: https://www.umtri.umich.edu/
     company_logo: ''
-    date_start: 2024-01-01
-    date_end: 
+    date_start: 2024-01-10
+    date_end: 2024-12-10
     summary: |
       Responsibilities include:
+      - Developed an immersive driving simulator in Unreal Engine 4 with realistic map to study driver workload and distraction by using visual occlusion.
       - Exported the data of 10 km long I-94 highway in Detroit to RoadRunner to create the virtual road with realistic road pattern.
-      - Built an easy-to-use driving simulator platform in Unreal Engine 4 with Carla.
-      - Made an immersive environment with foliage and sigs in the simulator with random distribution. The rendering was 4x faster by optimization.
+      - Made an immersive environment and optimized rendering speed by 4x using macro variation and level-of-detail (LOD) techniques for foliage, road signs, and environmental assets, reducing frame drops and ensuring a high update rate.
+
+  - position: Backend Development Inter
+    company_name: Ping An Technology Co., Ltd.
+    company_url: 
+    company_logo: ''
+    date_start: 2023-05-04
+    date_end: 2023-08-01
+    summary: |
+      Responsibilities include:
+      - Read papers related to SimCLR model and MoCo model for unsupervised multimedia data quality assessment technology.
+      - Learned scripts of SimCLR from Github and reproduced code with PyTorch.
+      - Implemented the deep residual network (ResNet-50) and Very Deep Convolutional Networks (VGG).
 
   - position: Research Student - Advised by Professor Qinya Li
     company_name: Shanghai Jiao Tong University
@@ -111,8 +175,12 @@ skills:
         icon: devicon/python
       - name: PyTorch
         description: ''
-        percent: 60
+        percent: 80
         icon: devicon/pytorch
+      - name: Java
+        description: ''
+        percent: 50
+        icon: devicon/python
       - name: JavaScript
         description: ''
         percent: 50
@@ -245,9 +313,8 @@ awards:
       It is a web game mainly written by Elm language. It is a puzzle game simulated by game Rust Lake. You are trapped in a 7-day loop. You need to find the way out by interacting with different NPCs and locations. A lot of small games are hidden in different locations. You can explore a lot of things. In this game, the logic is realized by a functional programming language Elm and the front-end is realized by CSS. We used Github for version control and team manamgement.
 ---
 
-Hi! I am a senior student in University of Michigan majoring in Data Science Engineering. And I have a dual degree in Shanghai Jiao Tong University in Electrical and Computer Engineering. 
-I am currently looking for job or research opportunities related to Artificial Intelligence and Software Development Engineer in 2025 Summer.
+Hi! I’m an AI developer and full-stack engineer passionate about transforming intelligent systems into real-world products. I am a first year grad student in University of Southern California studying Computer Science. I recently graduated with dual B.S.E. degrees in Data Science Engineering from the University of Michigan and Electrical & Computer Engineering from Shanghai Jiao Tong University, and I’m currently seeking 2026 summer intern opportunities.
 
-I have experience in Machine Learning, Deep Learning, and Big Model Optimization. I also have experience in web full stack development and game engine development.
+Over four internships at companies and startups including AMD, Ping An Technology, Artisk.ai, and GetStitch.ai, I’ve built and deployed production-level applications spanning AI developer tools, generative design, computer vision, education platforms, and distributed systems. I love working across the stack—from building deep learning inference pipelines to designing intuitive web interfaces and scalable backend services.
 
-I am currently learning Computer Vision and Computer Graphics. I am interested in Deep Learning and Big Model Applications.
+My technical toolkit includes Python, C++, JavaScript, Go, React, Flask, FastAPI, Redis, Docker, PyTorch, ONNX, MongoDB, MySQL, Neo4j, and cloud platforms like AWS and GCP.
