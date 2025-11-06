@@ -347,3 +347,5 @@ Hi! I’m an AI developer and full-stack engineer passionate about transforming 
 Over four internships at companies and startups including AMD, Ping An Technology, Artisk.ai, and GetStitch.ai, I’ve built and deployed production-level applications spanning AI developer tools, generative design, computer vision, education platforms, and distributed systems. I love working across the stack—from building deep learning inference pipelines to designing intuitive web interfaces and scalable backend services.
 
 My technical toolkit includes Python, C++, JavaScript, Go, React, Flask, FastAPI, Redis, Docker, PyTorch, ONNX, MongoDB, MySQL, Neo4j, and cloud platforms like AWS and GCP.
+
+🏆 Finalist, Grundfos Prize Student Award 2025 (Project Student/Group Category – Bjerringbro, Denmark), recognized for AI-based predictive-maintenance research.
