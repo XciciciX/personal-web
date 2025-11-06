@@ -6,6 +6,7 @@
       "body",
       "button",
       "circle",
+      "clippath",
       "defs",
       "div",
       "footer",
@@ -34,7 +35,8 @@
       "svg",
       "time",
       "title",
-      "ul"
+      "ul",
+      "use"
     ],
     "classes": [
       "-mt-[105px]",
@@ -205,6 +207,8 @@
     "ids": [
       "deviconConfluence0",
       "deviconConfluence1",
+      "deviconGo0",
+      "deviconGo1",
       "deviconLinux0",
       "deviconLinux1",
       "deviconLinux2",

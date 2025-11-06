@@ -179,7 +179,11 @@ skills:
       - name: Java
         description: ''
         percent: 50
-        icon: devicon/python
+        icon: devicon/java
+      - name: Go
+        description: ''
+        percent: 50
+        icon: devicon/go
       - name: JavaScript
         description: ''
         percent: 50
