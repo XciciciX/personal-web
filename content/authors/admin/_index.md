@@ -111,8 +111,8 @@ work:
       - Implemented a Redis-based asynchronous task queue with request polling and real-time updates, enabling smooth client-side interaction via JavaScript while ensuring efficient and non-blocking image processing workflows.
 
   - position: Student Contributor
-    company_name: Artisk.ai
-    company_url: https://www.artisk.ai/
+    company_name: Stitches.ai
+    company_url: 
     company_logo: ''
     date_start: 2025-02-01
     date_end: 2025-03-01
@@ -284,12 +284,25 @@ awards:
   - title: 'miProxy – HTTP Video Proxy'
     url: https://github.com/XciciciX/miProxy
     date: '2024-08-20'
-    awarder: December 2024
+    awarder: November 2024
     icon: 
     summary: |
       The project is an adaptive HTTP proxy designed for MPEG-DASH video streaming, capable of dynamically selecting video bitrates based on real-time network throughput. It integrates a custom DNS-based load balancer to distribute client requests among multiple CDN servers, optimizing both latency and load distribution. Advanced adaptive streaming techniques are applied to monitor connection bandwidth and automatically adjust segment bitrates to maintain stable playback quality.
 
       For performance evaluation, a multi-node CDN environment was simulated using Mininet, where the proxy achieved consistent load balancing (<5% variance) and sustained up to 30% higher average bitrate utilization under fluctuating bandwidth conditions. The system supports concurrent client connections and ensures smooth playback by combining intelligent bitrate adaptation with efficient TCP data forwarding and throughput estimation.
+
+  - title: 'NeRF & 3D Gaussian Splatting – 3D Reconstruction'
+    url: https://github.com/XciciciX/NeRF_Reproduct.git
+    date: '2024-11-13'
+    awarder: December 2024
+    icon: 
+    summary: |
+      Implemented a compact NeRF pipeline from scratch in PyTorch to reconstruct 3D scenes from posed RGB images, including camera ray generation, stratified sampling along rays, Fourier positional encoding, and differentiable volumetric rendering for color and depth prediction. Trained the model on a multi-view dataset to synthesize novel views and visualize intermediate reconstructions.
+
+      Extended the project with a pure-Python 3D Gaussian Splatting renderer that represents scenes as thousands of explicit 3D Gaussians. Built quaternion-based rotation and scaling matrices, projected 3D covariance matrices into image space, and implemented tile-based rasterization with alpha blending and spherical harmonics features to render view-dependent colors and achieve efficient differentiable 3D reconstruction.
+
+
+
       
   - title: 'Lipstick Expert'
     url: https://lipstickexpert.netlify.app/
@@ -300,6 +313,7 @@ awards:
       The Lipstick Expert is a web search engine to guide consumers how to select the most suitable lipstick based on price, benefit, and color in the rapidly expanding cosmetic market. The project crawls data from YouTube and Sephora, and then utilizes natrual language processing and machine learning model to develop an algorithm for product scores. Finally, it returns the top recommended lipstick choices for consumers. 
       The data collection process crawls the ten most related products from YouTube Lipstick videos, and the product details on Sephora. Data is crawled by BeautifulSoup, Youtube API and Sephora API.
       Our model determines product scores by considering factors such as mention frequency, popularity metrics, and sentiment analysis from natural language processing. The model is trained and optimized based on Kendall-tau distance using Python.
+
   - title: 'Full-stack Web Development: Simulate Instagram'
     url: http://ec2-54-152-252-86.compute-1.amazonaws.com/accounts/login/
     date: '2024-03-01'
